@@ -41,15 +41,21 @@
 	</ContentSection>
 	
 	{#if game.features && game.features.length > 0}
-		<GameFeatures features={game.features} />
+		<div class="section-container">
+			<GameFeatures features={game.features} />
+		</div>
 	{/if}
 	
 	{#if game.gallery && game.gallery.length > 0}
-		<GameGallery images={game.gallery} title={game.title} />
+		<div class="section-container">
+			<GameGallery images={game.gallery} title={game.title} />
+		</div>
 	{/if}
 	
 	{#if game.awards && game.awards.length > 0}
-		<GameAwards awards={game.awards} />
+		<div class="section-container">
+			<GameAwards awards={game.awards} />
+		</div>
 	{/if}
 	
 	{#if game.systemRequirements}
@@ -159,5 +165,12 @@
 			gap: 1rem;
 			justify-content: center;
 		}
+	}
+
+	.section-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 20px;
 	}
 </style>
