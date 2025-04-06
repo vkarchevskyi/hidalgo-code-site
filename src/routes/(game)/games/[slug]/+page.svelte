@@ -4,7 +4,6 @@
 	import GameFeatures from '$lib/components/organisms/GameFeatures.svelte';
 	import GameGallery from '$lib/components/organisms/GameGallery.svelte';
 	import GameAwards from '$lib/components/organisms/GameAwards.svelte';
-	import SystemRequirements from '$lib/components/organisms/SystemRequirements.svelte';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import Header from '$lib/components/organisms/Header.svelte';
@@ -48,10 +47,6 @@
 		<div class="section-container">
 			<GameAwards awards={game.awards} />
 		</div>
-	{/if}
-	
-	{#if game.systemRequirements}
-		<SystemRequirements systemRequirements={game.systemRequirements} />
 	{/if}
 	
 	<ContentSection id="game-cta" title="Ready to Play?" align="top">

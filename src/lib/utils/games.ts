@@ -57,26 +57,6 @@ const games: Game[] = [
 				description: 'Buy low, sell high as you navigate a dynamic interstellar economy.'
 			}
 		],
-		systemRequirements: {
-			minimal: {
-				OS: 'Windows 10 64-bit',
-				Processor: 'Intel Core i5-4460 / AMD Ryzen 3 1200',
-				Memory: '8 GB RAM',
-				Graphics: 'NVIDIA GeForce GTX 960 / AMD Radeon R9 380',
-				DirectX: 'Version 11',
-				Storage: '50 GB available space',
-				Network: 'Broadband Internet connection'
-			},
-			recommended: {
-				OS: 'Windows 10 64-bit',
-				Processor: 'Intel Core i7-8700K / AMD Ryzen 5 3600',
-				Memory: '16 GB RAM',
-				Graphics: 'NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700',
-				DirectX: 'Version 12',
-				Storage: '50 GB SSD',
-				Network: 'Broadband Internet connection'
-			}
-		},
 		platforms: ['Windows PC', 'PlayStation 5', 'Xbox Series X|S'],
 		price: '$39.99',
 		storeLinks: [

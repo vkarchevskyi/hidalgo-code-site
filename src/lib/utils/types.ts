@@ -47,10 +47,6 @@ export interface Game {
 	trailer?: string;
 	releaseDate?: Date;
 	features?: { title: string; description: string; icon?: string }[];
-	systemRequirements?: {
-		minimal: { [key: string]: string };
-		recommended?: { [key: string]: string };
-	};
 	platforms?: string[];
 	price?: string;
 	storeLinks?: { platform: string; url: string }[];
