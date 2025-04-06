@@ -6,23 +6,14 @@
 </script>
 
 <section id="hero">
-	<h1 class="hello">This is a SvelteKit Static Blog Template!</h1>
 	<p class="intro">
-		<span class="left">It supports Markdown,</span>
-		<span class="right">and is really fast.</span>
+		<span class="center">Fellow adventurer, welcome to</span>
 	</p>
-	<div class="ctas">
-		<Sparkles>
-			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
-				<GitHubIcon slot="icon" />
-				Source Code
-			</Button>
-		</Sparkles>
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-			<FeaturesIcon slot="icon" />
-			Components
-		</Button>
-	</div>
+	<h1 class="hello">Hidalgo Code Tavern!</h1>
+	<p class="intro">
+		<span class="left">Take a shot of ale, wanderer,</span>
+		<span class="right">and choose your next adventure</span>
+	</p>
 </section>
 
 <style lang="scss">
@@ -54,6 +45,9 @@
 
 			.left {
 				text-align: left;
+			}
+			.center {
+				text-align: center;
 			}
 			.right {
 				text-align: right;

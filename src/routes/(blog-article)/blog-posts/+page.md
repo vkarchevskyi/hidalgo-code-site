@@ -5,7 +5,7 @@ coverImage: /images/posts/blog-posts.jpg
 date: 2023-04-22T21:55:15.361Z
 excerpt: How to manage existing blog posts and create new ones
 tags:
-  - Documentation
+  - Stellar Odyssey
 ---
 
 <script>
