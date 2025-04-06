@@ -7,12 +7,15 @@
 	import SystemRequirements from '$lib/components/organisms/SystemRequirements.svelte';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
+	import Header from '$lib/components/organisms/Header.svelte';
 	
 	export let data: { game: Game };
 	$: ({ game } = data);
 </script>
 
 <div class="game-page">
+	<Header />
+
 	<GameHero 
 		title={game.title}
 		coverImage={game.coverImage}
