@@ -52,11 +52,13 @@
 					bind:this={gameElements[i]}
 				>
 					<div class="game-image">
-						<img src={game.coverImage} alt={game.title} />
-						<div class="game-image-overlay"></div>
+						<a href={`/games/${game.slug}`}>
+							<img src={game.coverImage} alt={game.title} />
+							<div class="game-image-overlay"></div>
+						</a>
 					</div>
 					<div class="game-content">
-						<h3>{game.title}</h3>
+						<h3><a href={`/games/${game.slug}`}>{game.title}</a></h3>
 						<p>{game.shortDescription}</p>
 						
 						<div class="game-meta">
@@ -165,6 +167,12 @@
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 		transition: transform 0.3s ease;
 		
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+		
 		&:hover {
 			transform: translateY(-10px);
 			
@@ -203,6 +211,16 @@
 			font-size: 2.2rem;
 			margin-bottom: 20px;
 			color: var(--color--primary);
+			
+			a {
+				color: inherit;
+				text-decoration: none;
+				transition: color 0.2s ease;
+				
+				&:hover {
+					color: var(--color--primary-dark, var(--color--primary));
+				}
+			}
 		}
 		
 		p {
