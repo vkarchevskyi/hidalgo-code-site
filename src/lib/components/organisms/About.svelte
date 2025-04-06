@@ -7,12 +7,13 @@
 <section id="about">
 	<div class="info">
 		<h2>
-			This is a catchy headline that
-			<SparklingHighlight color="secondary">sparkles!</SparklingHighlight>
+			Windmills are new.
+			<SparklingHighlight color="secondary">Knights</SparklingHighlight>
+			are the same
 		</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
+			Whomever you are in your life, deep down you know you belong to something bigger.
+			Follow the call of the void and become who you always wanted to be in this game.
 		</p>
 		<div class="socials">
 			<span>Socials:</span>
