@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Game } from '$lib/utils/types';
+	import type { BlogPost, Game } from '$lib/utils/types';
 	import GameHero from '$lib/components/organisms/GameHero.svelte';
 	import GameFeatures from '$lib/components/organisms/GameFeatures.svelte';
 	import GameGallery from '$lib/components/organisms/GameGallery.svelte';
@@ -7,9 +7,10 @@
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import Header from '$lib/components/organisms/Header.svelte';
-	
-	export let data: { game: Game };
-	$: ({ game } = data);
+	import BlogPostCard from '$lib/components/molecules/BlogPostCard.svelte';
+
+	export let data: { game: Game, posts: BlogPost[] };
+	$: ({ game, posts } = data);
 </script>
 
 <div class="game-page">
@@ -47,6 +48,27 @@
 		<div class="section-container">
 			<GameAwards awards={game.awards} />
 		</div>
+	{/if}
+
+	{#if posts && posts.length > 0}
+		<ContentSection
+			id="recent-posts"
+			title="Blog posts"
+			align="top"
+		>
+			<div class="grid">
+				{#each posts as post}
+					<BlogPostCard
+						slug={post.slug}
+						title={post.title}
+						excerpt={post.excerpt}
+						tags={post.tags}
+						readingTime={post.readingTime}
+						showImage={false}
+					/>
+				{/each}
+			</div>
+		</ContentSection>
 	{/if}
 	
 	<ContentSection id="game-cta" title="Ready to Play?" align="top">
