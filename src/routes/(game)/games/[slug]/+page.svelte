@@ -26,17 +26,6 @@
 	<ContentSection id="about" title="About the Game">
 		<div class="about-content">
 			{@html game.description}
-			
-			{#if game.storeLinks && game.storeLinks.length > 0}
-				<div class="cta-section">
-					<p class="price">{game.price || 'Free to Play'}</p>
-					<div class="cta-buttons">
-						{#each game.storeLinks as link}
-							<Button href={link.url} size="large">{link.platform}</Button>
-						{/each}
-					</div>
-				</div>
-			{/if}
 		</div>
 	</ContentSection>
 	
